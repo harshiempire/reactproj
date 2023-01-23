@@ -1,0 +1,14 @@
+body::before {
+  display: block;
+  content: "";
+  height: 75px;
+}
+.card {
+  background-image: linear-gradient(
+    200deg,
+    rgb(121, 175, 255),
+    rgb(0, 153, 255)
+  );
+}
+
+
