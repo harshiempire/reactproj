@@ -15,6 +15,7 @@ const Dashboard = () => {
             <Modal />
             <Modal />
             <Modal />
+            <Modal />
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum
               praesentium suscipit maxime itaque, dolore nemo non accusantium,
