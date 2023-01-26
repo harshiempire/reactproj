@@ -54,7 +54,7 @@ function SignUp() {
                 </div>
                 <div className="col">
                   <a
-                    href="/signup"
+                    href="/form"
                     className="btn btn1 mb-4 mt-3 sbtn"
                     type="button"
                   >
