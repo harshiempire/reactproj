@@ -53,13 +53,18 @@ function SignUp() {
                   </div>
                 </div>
                 <div className="col">
-                  <a
+                  {/* <a
                     href="/form"
                     className="btn btn1 mb-4 mt-3 sbtn"
                     type="button"
                   >
                     SignUp
-                  </a>
+                  </a> */}
+                  <input
+                    type="submit"
+                    className="btn btn1 mb-4 mt-3 sbtn"
+                    value="SignUp"
+                  />
                 </div>
                 <div className="col mb-3 pb-2">
                   <a className="" href="/login">

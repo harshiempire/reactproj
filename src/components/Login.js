@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 // import "./css/style.css";
 import "./css/login.css";
+import { NavLink } from "react-router-dom";
 import logimg from "../assets/images/login.png";
 
 const Login = () => {
@@ -50,13 +51,13 @@ const Login = () => {
                     </div>
                   </div>
                   <div className="col-5">
-                    <a href="/login">Forgot Password?</a>
+                    <NavLink href="/login">Forgot Password?</NavLink>
                   </div>
                   <div className="row pt-2">
                     <div className="col-6"></div>
-                    <a href="/signup" className="col-6">
+                    <NavLink href="/signup" className="col-6">
                       Create a new Account!
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
                 <div className="col">
@@ -65,7 +66,7 @@ const Login = () => {
                   </button>
                 </div>
                 {/* <div className="col mb-3 pb-2">
-                  <a className="" href="/signup">
+                  <NavLink className="" href="/signup">
                     Don't have an account?
                   </a>
                 </div> */}

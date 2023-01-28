@@ -1,5 +1,6 @@
 import React from "react";
 // import App from "../App";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,9 +10,9 @@ const Navbar = () => {
         style={{ backgroundColor: "#407bff" }}
       >
         <div className="container">
-          <a href="/" className="navbar-brand">
+          <NavLink to="/" className="navbar-brand">
             CareerGuru
-          </a>
+          </NavLink>
 
           <button
             className="navbar-toggler"
@@ -25,9 +26,9 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navmenu">
             <ul className="navbar-nav ms-auto">
               <li className="nav-item">
-                <a href="/" className="nav-link">
+                <NavLink to="/" className="nav-link">
                   Home
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a href="#knowmore" className="nav-link">
@@ -40,12 +41,12 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <a className="btn btn-warning btn-sm mx-2" href="/login">
+            <NavLink className="btn btn-warning btn-sm mx-2" to="/Login">
               Login
-            </a>
-            <a href="/signup" className="btn btn-primary btn-sm mx-2">
+            </NavLink>
+            <NavLink to="/SignUp" className="btn btn-primary btn-sm mx-2">
               Sign Up
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>
