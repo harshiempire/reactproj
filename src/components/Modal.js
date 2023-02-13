@@ -1,15 +1,15 @@
 import React from "react";
 
-const Modal = () => {
+const Modal = (props) => {
   return (
-    <div className="row mt-1 mb-3 mx-1 p-3 border border-dark">
+    <div className="row mt-1 mb-3 mx-1 p-3 border border-right border-dark">
       <div className="col-2">
         <div className="border border-dark h-100  bg-warning-subtle"></div>
       </div>
       <div className="col-7">
         <div className="container">
-          <h3>Company Name</h3>
-          <p className="p-1">Desired role</p>
+          <h3>{props.companyName}</h3>
+          <p className="p-1">{props.role}</p>
         </div>
       </div>
       <div className="col-3">
@@ -48,8 +48,8 @@ const Modal = () => {
                 <div className="row mt-1 mb-3 mx-5 py-3 border border-dark">
                   <div className="col-10">
                     <div className="container">
-                      <h3>Software Engineer</h3>
-                      <p className="p-1">Company Name</p>
+                      <h3>{props.role}</h3>
+                      <p className="p-1">{props.companyName}</p>
                     </div>
                   </div>
                   <div className="col-2">
@@ -62,18 +62,15 @@ const Modal = () => {
                   </div>
                   <div className="fs-5 p-3">
                     <span className="fw-bold">Desired Skills:</span>
-                    Java,Python
+                    {props.desiredSkills}
                   </div>
                   <div className="fs-5 p-3">
                     <span className="fw-bold">Years of Experience:</span>
-                    0-3 Years
+                    {props.yearsOfExperience}
                   </div>
                   <div className="fs-5 p-3">
                     <span className="fw-bold">Job Description:</span>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Sunt mollitia, eos repellat reprehenderit accusamus ex
-                    voluptate magni rerum sit architecto deserunt facere unde
-                    sint animi!
+                    {props.jobDescription}
                   </div>
                 </div>
               </div>

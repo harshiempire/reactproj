@@ -1,4 +1,6 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
+// import Settings
 
 const Sidebar = () => {
   return (
@@ -14,18 +16,18 @@ const Sidebar = () => {
       </div>
       <ul className="nav nav-pills flex-column mb-auto">
         <li className="nav-item">
-          <a href="/dashboard" className="btn btn-light my-2 w-100 p-3">
+          <NavLink to="/dashboard" className="btn btn-light my-2 w-100 p-3">
             Dashboard
-          </a>
+          </NavLink>
         </li>
         <li className="nav-item">
           <a href="/dashboard" className="btn btn-light my-2 w-100 p-3">
-            Dashboard
+            Search
           </a>
         </li>
-        <a href="/dashboard" className="btn btn-light my-2 w-100 p-3">
+        <NavLink to="/settings" className="btn btn-light my-2 w-100 p-3">
           <i className="bi bi-gear-fill px-2"></i>Settings
-        </a>
+        </NavLink>
       </ul>
       {/* <!-- </nav> --> */}
     </div>

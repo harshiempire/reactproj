@@ -3,19 +3,20 @@ import Navbar from "./Navbar";
 import homeimg from "../assets/images/image1.png";
 import dashimg from "../assets/images/dashboard.png";
 import "./css/style.css";
+import { NavLink } from "react-router-dom";
 
-const linearGradient =
-  "linear-gradient(200deg ,rgb(0, 102, 255),rgb(0, 204, 255));";
+// const linearGradient =
+//   "linear-gradient(200deg ,rgb(0, 102, 255),rgb(0, 204, 255));";
 
 const Homepage = () => {
   return (
-    <div>
+    <div className="home">
       <Navbar />
-      <section className="p-5 text-center text-sm-start">
+      <section className="p-3 text-center text-sm-start">
         <div className="container">
           <div className="d-sm-flex align-items-center justify-items-between">
             <div>
-              <h1>Stuck deciding your career?</h1>
+              <h1 className="headtext">Stuck deciding your career?</h1>
               <p className="lead my-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Eligendi libero sequi sed, unde ad veritatis molestias mollitia
@@ -25,15 +26,15 @@ const Homepage = () => {
                 dolor sit amet consectetur, adipisicing elit. Fugiat nisi ullam
                 a aperiam autem at mollitia explicabo similique provident eum?
               </p>
-              <a
-                className="btn text-white btn-lg"
-                style={{
-                  backgroundImage: linearGradient,
-                }}
-                href="signup.html"
+              <NavLink
+                className="btn btn-primary text-white btn-lg"
+                // style={{
+                //   backgroundImage: linearGradient,
+                // }}
+                to="/signup"
               >
                 Get Started
-              </a>
+              </NavLink>
             </div>
             <img
               className="img-fluid w-50 d-none d-md-block"
@@ -49,7 +50,7 @@ const Homepage = () => {
           <div className="row text-center g-2">
             <div className="col-md">
               <div
-                className="card text-dark"
+                className="card text-white"
                 style={{
                   backgroundColor: "linear-gradient(200deg, #bad0e4, #5090cc);",
                 }}

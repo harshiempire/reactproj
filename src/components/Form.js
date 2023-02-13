@@ -1,11 +1,13 @@
 import React from "react";
 import fimg from "../assets/images/icons8-facebook-48.png";
 import "./css/sform.css";
+import Navbar from "./Navbar";
 
 const Form = () => {
   return (
     <div>
-      <div className="container-fluid">
+      <Navbar />
+      <div className="container-fluid home">
         <div className="row">
           <div className="col-md-6 d-flex justify-content-center align-items-center">
             <div className="tryfixed">
